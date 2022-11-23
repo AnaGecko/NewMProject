@@ -13,7 +13,9 @@
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -34,12 +36,11 @@
             <scope>test</scope>
         </dependency>
 
-
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.6</version>
-            <type>pom</type>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.6.0</version>
         </dependency>
+
     </dependencies>
 </project>
