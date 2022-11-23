@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class styntSearch {
+public class StyntSearch {
     WebDriver driver = null;
     @Given("browser is open")
     public void browser_is_open() {
