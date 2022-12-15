@@ -4,32 +4,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.And;
-import org.junit.AfterClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.concurrent.TimeUnit;
-
-public class Steps {
-    WebDriver driver = null;
+public class Login extends SetUp{
 
 
-    //    @Given("user is on login page")
     @Given("user is on login page")
     public void user_is_on_login_page() {
 
-        System.out.println("Browser is opened");
-        String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath + "Drivers/chromeDriver/chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", + projectPath "C:/Users/andrijanaj/IdeaProjects/SeleniumCucumberBDD/src/test/resources/Driver/chromedriver.exe");
-        driver = new ChromeDriver();
-
-
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
 
         driver.navigate().to("https://qa.stynt.com/");
         WebElement officeLogin = driver.findElement(By.xpath("//a[@id='officesSiteLink']"));

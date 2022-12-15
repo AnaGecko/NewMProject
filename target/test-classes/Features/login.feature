@@ -1,6 +1,6 @@
 
 Feature: login functionality test
-  @smoke
+#  @smoke
   Scenario: Check login with valid credentials
 
     Given user is on login page
