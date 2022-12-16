@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="14.241">
-    <testcase classname="login functionality test" name="Check login with valid credentials" time="7.395">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="36.005">
+    <testcase classname="login functionality test" name="Check login with valid credentials" time="16.333">
         <system-out><![CDATA[Given user is on login page.................................................passed
 When user enters valid username and password................................passed
 Then user is navigated to the home page.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Stynt search functionality test" name="Check Stynt search" time="6.75">
+    <testcase classname="Stynt search functionality test" name="Check Stynt search" time="19.562">
         <system-out><![CDATA[Given user is on Stynt page.................................................passed
 When user click on the login button.........................................passed
 And accept cookies..........................................................passed
