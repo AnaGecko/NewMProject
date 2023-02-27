@@ -23,7 +23,7 @@ Project implementation
 * In the target files is there are reports for the executed TC
   * The target is generating new report files for each time when the TC are executed
   * You can use clean/test in the maven setting to solve error related with the reports
-* In the pom file there are all dependency for this project:
+* In the pom file there are all dependency for this new project:
   * selenium-java | cucumber-junit | junit | cucumber-java | SeleniumCucumberBDD | maven compiler 
 
 
