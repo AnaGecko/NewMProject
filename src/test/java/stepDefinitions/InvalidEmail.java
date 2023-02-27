@@ -23,7 +23,7 @@ public class InvalidEmail {
     @Test
     @Given("user is on the page")
     public void user_is_on_the_page() {
-//        readconfig.getApplicationURL();
+        readconfig.getApplicationURL();
         setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
