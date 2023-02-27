@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.ContactUs;
 import utilities.ReadConfig;
@@ -17,13 +18,12 @@ public class LeadeshipAndFB {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
 //    WebDriver driver;
-//
 
     @Test
     @Given("user is on home page")
     public void user_is_on_home_page() {
-        readconfig.getApplicationURL();
-//        setup.driver.navigate().to("https://www.musala.com/");
+//        readconfig.getApplicationURL();
+        setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
 
@@ -57,10 +57,7 @@ public class LeadeshipAndFB {
 
     @And("verify that a new page is opened in new browser")
     public void verify_that_a_new_page_is_opened_in_new_browser() {
+        setup.driver.quit();
     }
 
 }
-
-
-
-

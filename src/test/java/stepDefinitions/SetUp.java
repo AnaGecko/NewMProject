@@ -16,37 +16,24 @@ import java.util.concurrent.TimeUnit;
 
 public class SetUp {
 
-    static WebDriver driver = new ChromeDriver();
-
-
-
+    WebDriver driver = new ChromeDriver();
     ReadConfig readconfig = new ReadConfig();
-    @BeforeClass
+
+
     public void openBrowser() {
         String projectPath = System.getProperty("user.dir");
         System.setProperty("webdriver.chrome.driver", projectPath + "Drivers/chromeDriver/chromedriver.exe");
 //        System.setProperty("webdriver.gecko.driver", projectPath + "Drivers/chromeDriver/geckodriver.exe");
 
-//        WebDriver driver = new ChromeDriver();
-        driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
+//        driver = new ChromeDriver();
         FirefoxDriver WebDriver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.musala.com/");
-//        System.setProperty("webdriver.chrome.driver", "Drivers/chromeDriver/chromedriver.exe");
-//        driver = new ChromeDriver();
-//
-//        driver.manage().deleteAllCookies();
-//        driver.manage().window().maximize();
-//
-//
-//        driver.get("https://www.musala.com/");
-
 
     }
-    @AfterClass
-    public static void tearDown(){
-        driver.quit();
-    }
+
+
 }

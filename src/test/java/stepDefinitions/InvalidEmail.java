@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import pages.ContactUs;
 import utilities.ReadConfig;
 
+//import static stepDefinitions.SetUp.driver;
+
 public class InvalidEmail {
 
 //    WebDriver driver;
@@ -20,10 +22,11 @@ public class InvalidEmail {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
 
-    @Test
+
     @Given("user is on the page")
     public void user_is_on_the_page() {
-        readconfig.getApplicationURL();
+
+//        readconfig.getApplicationURL();
         setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
@@ -59,5 +62,7 @@ public class InvalidEmail {
         createForm.invalidEmailMessage();
         createForm.wrongEmailFive();
         createForm.invalidEmailMessage();
+        setup.driver.quit();
     }
+
 }

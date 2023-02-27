@@ -11,16 +11,18 @@ import utilities.ReadConfig;
 
 import java.time.Duration;
 
+//import static stepDefinitions.SetUp.driver;
+
 public class OpenPossitionSofia {
     SetUp setup = new SetUp();
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
-    @Test
+
     @Given("user is on Career page")
     public void user_is_on_career_page() {
-        readconfig.getApplicationURL();
-//        setup.driver.navigate().to("https://www.musala.com/");
+//        readconfig.getApplicationURL();
+        setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement careers = setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a"));
@@ -122,8 +124,11 @@ public class OpenPossitionSofia {
 
         System.out.println("Position:"+ positionTen);
         System.out.println("More Info:"+ moreInfoTen);
+        setup.driver.quit();
 
 
     }
+
 }
+
 

@@ -11,18 +11,18 @@ import utilities.ReadConfig;
 
 import java.time.Duration;
 
+//import static stepDefinitions.SetUp.driver;
+
 public class Careers {
     SetUp setup = new SetUp();
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
 
-    @Test
 
     @Given("user is on Career")
     public void user_is_on_Career() {
-        readconfig.getApplicationURL();
-//        setup.driver.navigate().to("https://www.musala.com/");
+        setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement careers = setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a"));
@@ -55,17 +55,10 @@ public class Careers {
 
 //        WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"post-4891\"]/div/div[2]/div[2]")));
 //        element2.click();
-
-
-
-
-
-
-
-
-
+        setup.driver.quit();
 
     }
+
 }
 
 
