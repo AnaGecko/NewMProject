@@ -1,0 +1,4 @@
+stepDefinitions\OfficePage.class
+stepDefinitions\Runner.class
+stepDefinitions\Login.class
+stepDefinitions\SetUp.class
