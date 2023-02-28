@@ -3,13 +3,13 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
 import utilities.ReadConfig;
 
 import java.time.Duration;
+
 
 //import static stepDefinitions.SetUp.driver;
 
@@ -20,8 +20,10 @@ public class Careers {
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
 
 
+
     @Given("user is on Career")
     public void user_is_on_Career() {
+//        driver.get(baseURL);
         setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();

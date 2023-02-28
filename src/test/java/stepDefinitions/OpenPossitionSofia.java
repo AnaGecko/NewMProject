@@ -3,7 +3,6 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
@@ -18,6 +17,7 @@ public class OpenPossitionSofia {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+
 
     @Given("user is on Career page")
     public void user_is_on_career_page() {
@@ -47,7 +47,7 @@ public class OpenPossitionSofia {
         WebElement moreInfoOne = setup.driver.findElement(By.xpath("//a[@href=\"https://www.musala.com/job/user-experience-ux-designer/\"]"));
         moreInfoOne.getText();
 
-        WebElement positionTwo = setup.driver.findElement(By.xpath("//*[text()='Employee Relations Support Specialist']"));
+        WebElement positionTwo =setup.driver.findElement(By.xpath("//*[text()='Employee Relations Support Specialist']"));
         positionTwo.getText();
         WebElement moreInfoTwo = setup.driver.findElement(By.xpath("//a[@href=\"https://www.musala.com/job/employee-relations-support-specialist/\"]"));
         moreInfoTwo.getText();

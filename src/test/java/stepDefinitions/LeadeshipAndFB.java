@@ -8,8 +8,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
 import utilities.ReadConfig;
+
+import java.time.Duration;
+
+
 
 
 public class LeadeshipAndFB {
@@ -17,7 +22,9 @@ public class LeadeshipAndFB {
     static SetUp setup = new SetUp();
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
-//    WebDriver driver;
+    WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+
+
 
     @Test
     @Given("user is on home page")
