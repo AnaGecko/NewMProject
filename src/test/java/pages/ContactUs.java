@@ -1,15 +1,19 @@
 package pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.LoggerApp;
 
 import java.time.Duration;
 
 public class ContactUs {
 
     WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
     By contact_name = By.xpath(("//input[@name=\"your-name\"]"));
     By mobile = By.xpath(("//input[@name=\"mobile-number\"]"));

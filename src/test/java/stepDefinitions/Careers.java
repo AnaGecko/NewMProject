@@ -3,9 +3,13 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
+import utilities.LoggerApp;
 import utilities.ReadConfig;
 
 import java.time.Duration;
@@ -18,6 +22,7 @@ public class Careers {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+    private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
 
@@ -35,7 +40,8 @@ public class Careers {
         WebElement careers = setup.driver.findElement(By.xpath("//button[@class=\"contact-label contact-label-code btn btn-1b\"]"));
         careers.click();
         String currentUrl = setup.driver.getCurrentUrl();
-        System.out.println(currentUrl);
+        logger.info(currentUrl);
+//        System.out.println(currentUrl);
         WebElement anywhere = setup.driver.findElement(By.xpath("//select[@name=\"get_location\"]/option[5]"));
         anywhere.click();
     }
@@ -49,7 +55,7 @@ public class Careers {
         boolean generalDescription = setup.driver.findElement(By.xpath("//*[@id=\"post-5397\"]//div[2]/div[1]/div[1]/div[1]/div[2]")).isDisplayed();
         boolean requirements = setup.driver.findElement(By.xpath("//*[@id=\"post-5397\"]//div[2]/div[1]/div[1]/div[2]/div[2]")).isDisplayed();
         boolean apply = setup.driver.findElement(By.xpath("//input[@value=\"Apply\"]")).isDisplayed();
-//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"post-4891\"]/div/div[3]")));
+//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value=\"Apply\"]")));
 //        element.click();
 
 

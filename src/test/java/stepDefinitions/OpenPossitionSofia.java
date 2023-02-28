@@ -3,9 +3,12 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
+import utilities.LoggerApp;
 import utilities.ReadConfig;
 
 import java.time.Duration;
@@ -13,10 +16,12 @@ import java.time.Duration;
 //import static stepDefinitions.SetUp.driver;
 
 public class OpenPossitionSofia {
+
     SetUp setup = new SetUp();
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+    private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
     @Given("user is on Career page")
@@ -34,7 +39,8 @@ public class OpenPossitionSofia {
         WebElement careers = setup.driver.findElement(By.xpath("//button[@class=\"contact-label contact-label-code btn btn-1b\"]"));
         careers.click();
         String currentUrl = setup.driver.getCurrentUrl();
-        System.out.println(currentUrl);
+        logger.info(currentUrl);
+//        System.out.println(currentUrl);
         WebElement sofia = setup.driver.findElement(By.xpath("//select[@name=\"get_location\"]/option[3]"));
         sofia.click();
     }
@@ -95,35 +101,36 @@ public class OpenPossitionSofia {
 
 
 
-        System.out.println("Position:"+ positionOne);
-        System.out.println("More Info:"+ moreInfoOne);
 
-        System.out.println("Position:"+ positionTwo);
-        System.out.println("More Info:"+ moreInfoTwo);
+        logger.info("Position:"+ positionOne);
+        logger.info("More Info:"+ moreInfoOne);
 
-        System.out.println("Position:"+ positionThree);
-        System.out.println("More Info:"+ moreInfoThree);
+        logger.info("Position:"+ positionTwo);
+        logger.info("More Info:"+ moreInfoTwo);
 
-        System.out.println("Position:"+ positionFour);
-        System.out.println("More Info:"+ moreInfoFour);
+        logger.info("Position:"+ positionThree);
+        logger.info("More Info:"+ moreInfoThree);
 
-        System.out.println("Position:"+ positionFive);
-        System.out.println("More Info:"+ moreInfoFive);
+        logger.info("Position:"+ positionFour);
+        logger.info("More Info:"+ moreInfoFour);
 
-        System.out.println("Position:"+ positionSix);
-        System.out.println("More Info:"+ moreInfoSix);
+        logger.info("Position:"+ positionFive);
+        logger.info("More Info:"+ moreInfoFive);
 
-        System.out.println("Position:"+ positionSeven);
-        System.out.println("More Info:"+ moreInfoSeven);
+        logger.info("Position:"+ positionSix);
+        logger.info("More Info:"+ moreInfoSix);
 
-        System.out.println("Position:"+ positionEight);
-        System.out.println("More Info:"+ moreInfoEight);
+        logger.info("Position:"+ positionSeven);
+        logger.info("More Info:"+ moreInfoSeven);
 
-        System.out.println("Position:"+ positionNine);
-        System.out.println("More Info:"+ moreInfoNine);
+        logger.info("Position:"+ positionEight);
+        logger.info("More Info:"+ moreInfoEight);
 
-        System.out.println("Position:"+ positionTen);
-        System.out.println("More Info:"+ moreInfoTen);
+        logger.info("Position:"+ positionNine);
+        logger.info("More Info:"+ moreInfoNine);
+
+        logger.info("Position:"+ positionTen);
+        logger.info("More Info:"+ moreInfoTen);
         setup.driver.quit();
 
 

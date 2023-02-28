@@ -3,11 +3,14 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
+import utilities.LoggerApp;
 import utilities.ReadConfig;
 
 import java.time.Duration;
@@ -26,6 +29,7 @@ public class InvalidEmail  {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+    private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
     @Given("user is on the page")
