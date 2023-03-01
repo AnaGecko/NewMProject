@@ -6,6 +6,8 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
@@ -22,14 +24,22 @@ public class Careers {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+    JavascriptExecutor jse = (JavascriptExecutor)setup.driver;
+
+    Actions actions = new Actions(setup.driver);
+//    FirefoxDriver waitt = new FirefoxDriver();
+
+//    FirefoxDriver WebDriver = new FirefoxDriver(setup.driver, Duration.ofSeconds(10));
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
 
     @Given("user is on Career")
     public void user_is_on_Career() {
-//        driver.get(baseURL);
-        setup.driver.navigate().to("https://www.musala.com/");
+
+        setup.driver.get(readconfig.getApplicationURL());
+//        setup.driverr.get(readconfig.getApplicationURL());
+//        setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement careers = setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a"));
@@ -55,14 +65,20 @@ public class Careers {
         boolean generalDescription = setup.driver.findElement(By.xpath("//*[@id=\"post-5397\"]//div[2]/div[1]/div[1]/div[1]/div[2]")).isDisplayed();
         boolean requirements = setup.driver.findElement(By.xpath("//*[@id=\"post-5397\"]//div[2]/div[1]/div[1]/div[2]/div[2]")).isDisplayed();
         boolean apply = setup.driver.findElement(By.xpath("//input[@value=\"Apply\"]")).isDisplayed();
-//        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value=\"Apply\"]")));
-//        element.click();
+        jse.executeScript("scroll(0, 250)");
+        WebElement m = setup.driver.findElement(By.xpath("//a[@class =\"fancybox\"]/input[@type=\"button\"]"));
+        JavascriptExecutor j = (JavascriptExecutor) setup.driver;
+        j.executeScript("arguments[0].click();", m);
 
-
-
-
-//        WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"post-4891\"]/div/div[2]/div[2]")));
-//        element2.click();
+        setup.driver.findElement(By.xpath("//input[@name=\"your-name\"]")).sendKeys("");
+        setup.driver.findElement(By.xpath("//input[@name=\"your-email\"]")).sendKeys("test@");
+        setup.driver.findElement(By.xpath("//input[@name=\"mobile-number\"]")).sendKeys("078123123");
+        setup.driver.findElement(By.xpath("//span[@data-name=\"your-message\"]/textarea")).sendKeys("Test");
+//        createForm.invalidEmailMessage();
+        String invalidMessage = setup.driver.findElement(By.xpath("//span[@data-name=\"your-email\"]/span")).getText();
+        logger.info(invalidMessage);
+        String emptyName = setup.driver.findElement(By.xpath("//span[@data-name=\"your-name\"]/span")).getText();
+        logger.info(emptyName);
         setup.driver.quit();
 
     }

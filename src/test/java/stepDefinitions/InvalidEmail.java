@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
 import utilities.LoggerApp;
@@ -29,18 +30,24 @@ public class InvalidEmail  {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
+//    FirefoxDriver waitt = new FirefoxDriver();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
+
 
 
     @Given("user is on the page")
     public void user_is_on_the_page() {
 
         setup.driver.get(readconfig.getApplicationURL());
-//        setup.driver.navigate().to("https://www.musala.com/");
+//        setup.driverr.get(readconfig.getApplicationURL());
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement contactUs = setup.driver.findElement(By.xpath("//button[@class=\"contact-label btn btn-1b\"]"));
         contactUs.click();
+//        WebElement acceptCookie1 = setup.driverr.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
+//        acceptCookie.click();
+//        WebElement contactUs1 = setup.driverr.findElement(By.xpath("//button[@class=\"contact-label btn btn-1b\"]"));
+//        contactUs.click();
 
     }
     @And("fill all the required fields")
@@ -70,7 +77,7 @@ public class InvalidEmail  {
         createForm.wrongEmailFour();
         createForm.invalidEmailMessage();
         createForm.wrongEmailFive();
-        createForm.invalidEmailMessage();
+//        createForm.invalidEmailMessage();
         setup.driver.quit();
     }
 
