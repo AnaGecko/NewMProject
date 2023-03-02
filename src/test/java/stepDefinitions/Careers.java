@@ -73,12 +73,15 @@ public class Careers {
         setup.driver.findElement(By.xpath("//input[@name=\"your-name\"]")).sendKeys("");
         setup.driver.findElement(By.xpath("//input[@name=\"your-email\"]")).sendKeys("test@");
         setup.driver.findElement(By.xpath("//input[@name=\"mobile-number\"]")).sendKeys("078123123");
+        setup.driver.findElement(By.xpath("//input[@class=\"wpcf7-form-control wpcf7-file label-cf\"]")).sendKeys("C:\\picture.jpg");
         setup.driver.findElement(By.xpath("//span[@data-name=\"your-message\"]/textarea")).sendKeys("Test");
-//        createForm.invalidEmailMessage();
         String invalidMessage = setup.driver.findElement(By.xpath("//span[@data-name=\"your-email\"]/span")).getText();
         logger.info(invalidMessage);
         String emptyName = setup.driver.findElement(By.xpath("//span[@data-name=\"your-name\"]/span")).getText();
         logger.info(emptyName);
+
+
+
         setup.driver.quit();
 
     }
