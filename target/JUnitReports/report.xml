@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="52.12">
-    <testcase classname="Contact Us" name="Invalid email" time="8.071">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="43.914">
+    <testcase classname="Contact Us" name="Invalid email" time="6.313">
         <system-out><![CDATA[Given user is on the page...................................................passed
 And fill all the required fields............................................passed
 When user click on Send.....................................................passed
 Then an error message is presented in the screen............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Leadership and FB" name="Check Leadership and FB page" time="7.964">
+    <testcase classname="Leadership and FB" name="Check Leadership and FB page" time="6.71">
         <system-out><![CDATA[Given user is on home page..................................................passed
 When user click on Company..................................................passed
 And verify URL and Leadership section.......................................passed
@@ -15,13 +15,13 @@ Then click on FB page.......................................................pass
 And verify that a new page is opened in new browser.........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Careers" name="Careers" time="17.774">
+    <testcase classname="Careers" name="Careers" time="15.176">
         <system-out><![CDATA[Given user is on Career.....................................................passed
 When click on Open Position.................................................passed
 Then click on open Job......................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Careers" name="Careers" time="18.177">
+    <testcase classname="Careers" name="Careers" time="15.594">
         <system-out><![CDATA[Given user is on Career page................................................passed
 When click on Open Position page............................................passed
 Then filter available position by City......................................passed
