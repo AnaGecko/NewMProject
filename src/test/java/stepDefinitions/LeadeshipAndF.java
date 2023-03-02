@@ -37,14 +37,11 @@ public class LeadeshipAndF {
 
         setup.driver.get(readconfig.getApplicationURL());
         setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]")).click();
-
-
     }
 
     @When("user click on Company")
     public void user_click_on_Company() {
         setup.driver.findElement(By.xpath("//div[@id=\"navbar\"]/div/ul/li[1]/a")).click();
-
     }
 
     @And("verify URL and Leadership section")

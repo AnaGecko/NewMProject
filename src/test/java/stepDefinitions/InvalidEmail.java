@@ -22,15 +22,14 @@ import java.time.Duration;
 
 public class InvalidEmail  {
 
-//    WebDriver driver;
+
 
 
     SetUp setup = new SetUp();
-//    LeadershipAndFb login;
+
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
-//    FirefoxDriver waitt = new FirefoxDriver();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
@@ -39,15 +38,10 @@ public class InvalidEmail  {
     public void user_is_on_the_page() {
 
         setup.driver.get(readconfig.getApplicationURL());
-//        setup.driverr.get(readconfig.getApplicationURL());
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement contactUs = setup.driver.findElement(By.xpath("//button[@class=\"contact-label btn btn-1b\"]"));
         contactUs.click();
-//        WebElement acceptCookie1 = setup.driverr.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
-//        acceptCookie.click();
-//        WebElement contactUs1 = setup.driverr.findElement(By.xpath("//button[@class=\"contact-label btn btn-1b\"]"));
-//        contactUs.click();
 
     }
     @And("fill all the required fields")
@@ -77,7 +71,6 @@ public class InvalidEmail  {
         createForm.wrongEmailFour();
         createForm.invalidEmailMessage();
         createForm.wrongEmailFive();
-//        createForm.invalidEmailMessage();
         setup.driver.quit();
     }
 

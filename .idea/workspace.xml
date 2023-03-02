@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43990a9b-3304-4c12-97bf-8ab2c9333d5c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Careers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Careers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HtmlReports" beforeDir="false" afterPath="$PROJECT_DIR$/target/HtmlReports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Careers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/Careers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/OpenPossitionSofia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/OpenPossitionSofia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/InvalidEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/InvalidEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/LeadeshipAndF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LeadeshipAndF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/OpenPossitionSofia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/OpenPossitionSofia.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,22 +244,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/Careers.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/Careers.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

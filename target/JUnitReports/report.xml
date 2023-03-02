@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="55.581">
+    <testcase classname="Contact Us" name="Invalid email" time="7.82">
+        <system-out><![CDATA[Given user is on the page...................................................passed
+And fill all the required fields............................................passed
+When user click on Send.....................................................passed
+Then an error message is presented in the screen............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Leadership and FB" name="Check Leadership and FB page" time="8.649">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+When user click on Company..................................................passed
+And verify URL and Leadership section.......................................passed
+Then click on FB page.......................................................passed
+And verify that a new page is opened in new browser.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Careers" name="Careers" time="19.561">
+        <system-out><![CDATA[Given user is on Career.....................................................passed
+When click on Open Position.................................................passed
+Then click on open Job......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Careers" name="Careers" time="19.435">
+        <system-out><![CDATA[Given user is on Career page................................................passed
+When click on Open Position page............................................passed
+Then filter available position by City......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

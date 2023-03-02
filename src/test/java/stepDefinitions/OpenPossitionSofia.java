@@ -6,7 +6,6 @@ import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.ContactUs;
 import utilities.LoggerApp;
@@ -14,7 +13,7 @@ import utilities.ReadConfig;
 
 import java.time.Duration;
 
-//import static stepDefinitions.SetUp.driver;
+
 
 public class OpenPossitionSofia {
 
@@ -22,7 +21,6 @@ public class OpenPossitionSofia {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
-//    FirefoxDriver waitt = new FirefoxDriver();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 
@@ -31,8 +29,8 @@ public class OpenPossitionSofia {
 
         setup.driver.get(readconfig.getApplicationURL());
         setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]")).click();
-        WebElement careers = setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a"));
-        careers.click();
+        setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a")).click();
+
     }
 
     @When("click on Open Position page")
