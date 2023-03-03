@@ -26,7 +26,7 @@ public class LeadeshipAndF {
     ContactUs createForm;
     ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
-//    FirefoxDriver waitt = new FirefoxDriver();
+
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
 

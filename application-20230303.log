@@ -4,3 +4,44 @@
 2023-03-03 10:38:25.114 [main] INFO  utilities.LoggerApp - The e-mail address entered is invalid.
 2023-03-03 10:38:25.148 [main] INFO  utilities.LoggerApp - The field is required.
 2023-03-03 10:42:22.838 [main] INFO  utilities.LoggerApp - https://www.musala.com/company/
+2023-03-03 12:18:18.100 [main] INFO  utilities.LoggerApp - https://www.musala.com/company/
+2023-03-03 12:18:33.643 [main] INFO  utilities.LoggerApp - https://www.musala.com/careers/join-us/
+2023-03-03 12:18:38.897 [main] INFO  utilities.LoggerApp - The e-mail address entered is invalid.
+2023-03-03 12:18:38.917 [main] INFO  utilities.LoggerApp - The field is required.
+2023-03-03 12:18:52.558 [main] INFO  utilities.LoggerApp - https://www.musala.com/careers/join-us/
+2023-03-03 12:18:55.497 [main] INFO  utilities.LoggerApp - Sofia
+2023-03-03 12:18:55.999 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='User experience (UX) designer']]
+2023-03-03 12:18:55.999 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/user-experience-ux-designer/"]]
+2023-03-03 12:18:55.999 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Employee Relations Support Specialist']]
+2023-03-03 12:18:56.000 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/employee-relations-support-specialist/"]]
+2023-03-03 12:18:56.000 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Join us as an UI/UX Designer!']]
+2023-03-03 12:18:56.000 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/ui-ux-designer/"]]
+2023-03-03 12:18:56.000 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Business Development Associate']]
+2023-03-03 12:18:56.000 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/business-development-associate/"]]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Data Engineer-AWS']]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/data-engineer-aws/"]]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Join us as an Accounting Expert!']]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/accounting-expert/"]]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Senior Java Developer']]
+2023-03-03 12:18:56.001 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/senior-java-developer/"]]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='DevOps Engineer']]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/devops-engineer/"]]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Full-Stack Developer']]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/full-stack-developer-3/"]]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Node.js Developer']]
+2023-03-03 12:18:56.002 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/node-js-developer/"]]
+2023-03-03 12:18:58.546 [main] INFO  utilities.LoggerApp - Skopje
+2023-03-03 12:18:58.747 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Senior Java Developer']]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/senior-java-developer/"]]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='DevOps Engineer']]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/devops-engineer/"]]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Full-Stack Developer']]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/full-stack-developer-3/"]]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - Position:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //*[text()='Node.js Developer']]
+2023-03-03 12:18:58.748 [main] INFO  utilities.LoggerApp - More Info:[[ChromeDriver: chrome on WINDOWS (932872d74dcb639f7e11f5492fe191d5)] -> xpath: //a[@href="https://www.musala.com/job/node-js-developer/"]]
+2023-03-03 12:21:25.450 [main] INFO  utilities.LoggerApp - https://www.musala.com/company/
+2023-03-03 12:22:43.812 [main] INFO  utilities.LoggerApp - https://www.musala.com/company/
+2023-03-03 12:23:06.519 [main] INFO  utilities.LoggerApp - https://www.musala.com/careers/join-us/
+2023-03-03 12:23:12.136 [main] INFO  utilities.LoggerApp - The e-mail address entered is invalid.
+2023-03-03 12:23:12.168 [main] INFO  utilities.LoggerApp - The field is required.
+2023-03-03 14:21:04.315 [main] INFO  utilities.LoggerApp - https://www.musala.com/company/
