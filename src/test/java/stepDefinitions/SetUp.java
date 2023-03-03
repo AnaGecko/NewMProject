@@ -21,21 +21,22 @@ public class SetUp {
 
 
     WebDriver driver = new ChromeDriver();
-//    WebDriver driverr = new FirefoxDriver();
+    WebDriver driverr = new FirefoxDriver();
 
     ReadConfig readconfig = new ReadConfig();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 
-    @Parameters("browser")
-    @BeforeTest
+//    @Parameters("browser")
+//    @BeforeTest
     public void launchapp(String browser) {
 
         if (browser.equalsIgnoreCase("firefox")) {
-            System.out.println(" Executing on FireFox");
-            driver = new FirefoxDriver();
-            driver.get(readconfig.getApplicationURL());
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.manage().window().maximize();
+            System.out.println("Executing on FireFox");
+            System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
+            driverr = new FirefoxDriver();
+            driverr.get(readconfig.getApplicationURL());
+            driverr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driverr.manage().window().maximize();
         } else if (browser.equalsIgnoreCase("chrome")) {
             System.out.println(" Executing on CHROME");
             System.out.println("Executing on IE");

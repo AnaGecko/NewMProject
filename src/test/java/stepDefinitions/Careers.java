@@ -22,13 +22,11 @@ import java.time.Duration;
 
 public class Careers {
     SetUp setup = new SetUp();
-    ContactUs createForm;
-    ReadConfig readconfig = new ReadConfig();
+    ContactUs createForm;ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
     JavascriptExecutor jse = (JavascriptExecutor)setup.driver;
-
     Actions actions = new Actions(setup.driver);
-//    FirefoxDriver waitt = new FirefoxDriver();
+    FirefoxDriver firefoxDriver = new FirefoxDriver();
 
 //    FirefoxDriver WebDriver = new FirefoxDriver(setup.driver, Duration.ofSeconds(10));
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
@@ -39,8 +37,6 @@ public class Careers {
     public void user_is_on_Career() {
 
         setup.driver.get(readconfig.getApplicationURL());
-//        setup.driverr.get(readconfig.getApplicationURL());
-//        setup.driver.navigate().to("https://www.musala.com/");
         WebElement acceptCookie = setup.driver.findElement(By.xpath("//a[@id=\"wt-cli-accept-all-btn\"]"));
         acceptCookie.click();
         WebElement careers = setup.driver.findElement(By.xpath("//*[@id=\"menu-main-nav-1\"]/li[5]/a"));
@@ -52,7 +48,6 @@ public class Careers {
         careers.click();
         String currentUrl = setup.driver.getCurrentUrl();
         logger.info(currentUrl);
-//        System.out.println(currentUrl);
         WebElement anywhere = setup.driver.findElement(By.xpath("//select[@name=\"get_location\"]/option[5]"));
         anywhere.click();
     }
