@@ -31,22 +31,22 @@ public class SetUp {
     public void launchapp(String browser) {
 
         if (browser.equalsIgnoreCase("firefox")) {
-            System.out.println("Executing on FireFox");
+            logger.info("Executing on FireFox");
             System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
             driverr = new FirefoxDriver();
             driverr.get(readconfig.getApplicationURL());
             driverr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driverr.manage().window().maximize();
         } else if (browser.equalsIgnoreCase("chrome")) {
-            System.out.println(" Executing on CHROME");
-            System.out.println("Executing on IE");
+            logger.info(" Executing on CHROME");
+            logger.info("Executing on IE");
             System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
             driver = new ChromeDriver();
             driver.get(readconfig.getApplicationURL());
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();
         } else if (browser.equalsIgnoreCase("ie")) {
-            System.out.println("Executing on IE");
+            logger.info("Executing on IE");
             System.setProperty("webdriver.ie.driver", "D:\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
             driver.get(readconfig.getApplicationURL());
