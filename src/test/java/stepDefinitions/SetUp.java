@@ -20,8 +20,9 @@ import java.util.concurrent.TimeUnit;
 public class SetUp {
 
 
-    WebDriver driver = new ChromeDriver();
-//   git 
+//    WebDriver driver = new ChromeDriver();
+    WebDriver driver = new FirefoxDriver();
+
     ReadConfig readconfig = new ReadConfig();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 

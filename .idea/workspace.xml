@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43990a9b-3304-4c12-97bf-8ab2c9333d5c" name="Changes" comment="" />
+    <list default="true" id="43990a9b-3304-4c12-97bf-8ab2c9333d5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-20230303.log" beforeDir="false" afterPath="$PROJECT_DIR$/application-20230303.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HtmlReports" beforeDir="false" afterPath="$PROJECT_DIR$/target/HtmlReports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JUnitReports/report.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/JUnitReports/report.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-reports/report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,6 +203,7 @@
       <option name="MAIN_CLASS_NAME" value="stepDefinitions.Runner" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dbrowser=FIREFOX" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,6 +248,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/SetUp.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
