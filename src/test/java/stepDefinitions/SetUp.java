@@ -21,7 +21,7 @@ public class SetUp {
 
 
     WebDriver driver = new ChromeDriver();
-//    WebDriver driver = new FirefoxDriver();
+//   git 
     ReadConfig readconfig = new ReadConfig();
     private static final Logger logger = LogManager.getLogger(LoggerApp.class);
 

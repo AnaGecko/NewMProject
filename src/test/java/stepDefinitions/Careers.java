@@ -22,7 +22,8 @@ import java.time.Duration;
 
 public class Careers {
     SetUp setup = new SetUp();
-    ContactUs createForm;ReadConfig readconfig = new ReadConfig();
+    ContactUs createForm;
+    ReadConfig readconfig = new ReadConfig();
     WebDriverWait wait = new WebDriverWait(setup.driver, Duration.ofSeconds(10));
 
     JavascriptExecutor jse = (JavascriptExecutor)setup.driver;
